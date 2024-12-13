@@ -40,6 +40,8 @@ local plugins = {
   },
 },
 
+    'lewis6991/gitsigns.nvim',
+
    {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
 	  -- or                            , branch = '0.1.x',	  -- or                            , branch = '0.1.x',
@@ -53,8 +55,9 @@ local plugins = {
   },
   -- Tree Sitter 
    'nvim-treesitter/nvim-treesitter', build = ':TSUpdate',
-   'theprimeagen/harpoon',
    'mbbill/undotree' ,
+   'nvim-lua/plenary.nvim',
+   'ThePrimeagen/harpoon',
    'tpope/vim-fugitive',
    'saadparwaiz1/cmp_luasnip',
    'rafamadriz/friendly-snippets',
