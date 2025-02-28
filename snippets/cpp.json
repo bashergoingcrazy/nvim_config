@@ -1,0 +1,10 @@
+{
+    "boilerPlate": {
+        "prefix": "boilerPlate",
+        "body": [
+            --------Your snippet------------------
+            "#include <iostream>"
+        ],
+        "description": "cppsnippet"
+    }
+} 
