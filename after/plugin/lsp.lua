@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = {"gopls","asm_lsp","ts_ls","tailwindcss","rust_analyzer","hls","lua_ls","cmake","clangd","html","cssls","jedi_language_server","sourcery"}
+    ensure_installed = {"gopls","asm_lsp","ts_ls","tailwindcss","rust_analyzer","hls","lua_ls","cmake","clangd","html","cssls","jedi_language_server",}
 })
 
 -- Utility function to check if the current directory is an ESP-IDF project
@@ -81,15 +81,6 @@ require("lspconfig").jedi_language_server.setup{
     capabilities = capabilities,
 }
 
-require("lspconfig").sourcery.setup{
-    on_attach = on_attach,
-    capabilities = capabilities,
-    init_options = ({
-        token = 'user_dEVuArTlpFGVX6jjyvHGWcGbD3JoxdYDS8pfWmTEB09tYzr4hFXOXOoOeSM',
-        extension_version = "vim.lsp",
-        editor_version = "vim"
-    })
-}
 
 
 

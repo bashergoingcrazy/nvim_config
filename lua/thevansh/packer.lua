@@ -26,6 +26,8 @@ return require('packer').startup(function(use)
 
     use ('github/copilot.vim')
 
+    -- Git Signs
+    use ('lewis6991/gitsigns.nvim')
 
     use 'saadparwaiz1/cmp_luasnip'
     use 'rafamadriz/friendly-snippets'
@@ -46,6 +48,8 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},
         }
     }
+    -- DAP (Debugger Adapter Protocol)
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} }
     -- This is for Commenting of code 
     use {  'JoosepAlviste/nvim-ts-context-commentstring',
         config = function()
@@ -61,6 +65,10 @@ return require('packer').startup(function(use)
         end
     }
     use "rebelot/kanagawa.nvim"
+    use "folke/snacks.nvim"
+
+
+
     -- This is for Bracket Completions
     use 'm4xshen/autoclose.nvim'
     use {'windwp/nvim-ts-autotag',config = function ()
