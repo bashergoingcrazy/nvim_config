@@ -54,13 +54,13 @@ vim.g.clipboard = {
 }
 
 -- Enable Copilot
-vim.api.nvim_set_keymap('n', '<Leader>ce', ':Copilot enable<CR>', { noremap = true, })
+--vim.api.nvim_set_keymap('n', '<Leader>ce', ':Copilot enable<CR>', { noremap = true, })
 -- Disable Copilot
-vim.api.nvim_set_keymap('n', '<Leader>cd', ':Copilot disable<CR>', { noremap = true, })
-vim.api.nvim_create_autocmd('BufEnter', {
-  pattern = '*',
-  command = 'Copilot disable'
-})
+--vim.api.nvim_set_keymap('n', '<Leader>cd', ':Copilot disable<CR>', { noremap = true, })
+--vim.api.nvim_create_autocmd('BufEnter', {
+-- pattern = '*',
+--  command = 'Copilot disable'
+--})
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
